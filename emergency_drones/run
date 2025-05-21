@@ -1,0 +1,10 @@
+gcc main.c list.c drone.c survivor.c ai.c view.c -o sim -lSDL2 -lpthread
+./sim
+
+
+gcc server.c -o server -lpthread
+./server
+&&
+gcc client.c -o drone_client
+./drone_client 0
+./drone_client 1
